@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FruitBasket",
+    "\\FruitBasket\\src-backend",
+    "\\FruitBasket\\src-backend\\Services",
+    "\\FruitBasket\\src-backend\\Services\\Products"
   ],
-  "SelectedNode": "\\K:\\Project",
+  "SelectedNode": "\\FruitBasket\\src-backend\\Services\\FruitBasket.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FruitBaskets.Users", "FruitBaskets.Users", "{9EA6CF05-EED9-4C54-A2CC-F2C608243422}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FruitBaskets.Baskets", "FruitBaskets.Baskets", "{ABCC1099-FD31-43BF-A67D-1E2279D6A655}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FruitBaskets.Products", "FruitBaskets.Products", "{4837924D-2AB5-4E68-BF50-AB0775620B81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitBaskets.Products", "FruitBaskets.Products\FruitBaskets.Products.csproj", "{35C7496A-63DA-43A6-AE21-66B14203CB5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C7496A-63DA-43A6-AE21-66B14203CB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C7496A-63DA-43A6-AE21-66B14203CB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C7496A-63DA-43A6-AE21-66B14203CB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C7496A-63DA-43A6-AE21-66B14203CB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35C7496A-63DA-43A6-AE21-66B14203CB5D} = {4837924D-2AB5-4E68-BF50-AB0775620B81}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {409A0906-0790-47B6-938B-015AF92FA22C}
+	EndGlobalSection
+EndGlobal
