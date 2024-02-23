@@ -466,11 +466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\Project\\FruitBasket\\src-backend\\Services\\FruitBaskets.Products\\FruitBaskets.Products.csproj",
+      "projectUniqueName": "K:\\Project\\FruitBaskets\\src-backend\\Services\\FruitBaskets.Products\\FruitBaskets.Products.csproj",
       "projectName": "FruitBaskets.Products",
-      "projectPath": "K:\\Project\\FruitBasket\\src-backend\\Services\\FruitBaskets.Products\\FruitBaskets.Products.csproj",
+      "projectPath": "K:\\Project\\FruitBaskets\\src-backend\\Services\\FruitBaskets.Products\\FruitBaskets.Products.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "K:\\Project\\FruitBasket\\src-backend\\Services\\FruitBaskets.Products\\obj\\",
+      "outputPath": "K:\\Project\\FruitBaskets\\src-backend\\Services\\FruitBaskets.Products\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

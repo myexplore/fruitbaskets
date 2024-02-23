@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vNq97WCkvbLrL6PO7KKyScH3U+8YDUByaCi9/hYzpJDcNk93VtGoVeWrnBN7Vsvej1mxD7Q0dg1aTLp89XtEyg==",
+  "dgSpecHash": "HDfNv2Ht6jjHR8+VYHhRC3skfXhyFlFC86NdiBKingYWwLgCj7Oh/o/5JtcitMtRODS8BOdR4GY4ctZO7NMcTg==",
   "success": true,
-  "projectFilePath": "K:\\Project\\FruitBasket\\src-backend\\Services\\FruitBaskets.Products\\FruitBaskets.Products.csproj",
+  "projectFilePath": "K:\\Project\\FruitBaskets\\src-backend\\Services\\FruitBaskets.Products\\FruitBaskets.Products.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
