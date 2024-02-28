@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gGbwXdJOKcqCC8vFwqc3VpVPNsnc5BpoVCHK8axjS78haV60LYY1kIcThkA8EO7sBgfUn/xEYSzWzFiG4IcRBw==",
+  "dgSpecHash": "Th0aNVp2t8biG4HK0Vs7dNNb00GlfjeiWUsjiL02DG8pnWkodZpvIdjzAP2Zj7vL8rPNfEGaMG5bEwOyoE7Urg==",
   "success": true,
   "projectFilePath": "K:\\Project\\FruitBaskets\\src-backend\\Services\\FruitBaskets.Products\\FruitBaskets.Products.Infrastructure\\FruitBaskets.Products.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\litedb\\5.0.19\\litedb.5.0.19.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FruitBaskets.Products.Application\FruitBaskets.Products.Application.csproj" />
+    <ProjectReference Include="..\FruitBaskets.Products.Domain\FruitBaskets.Products.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
