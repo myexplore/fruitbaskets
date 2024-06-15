@@ -1,4 +1,4 @@
-﻿namespace FruitBaskets.Products.Domain
+﻿namespace FruitBaskets.Domain
 {
     public abstract class Entity
     {

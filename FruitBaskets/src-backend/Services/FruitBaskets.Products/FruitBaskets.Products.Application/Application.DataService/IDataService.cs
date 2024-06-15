@@ -1,6 +1,6 @@
-﻿using FruitBaskets.Products.Domain;
+﻿using FruitBaskets.Domain;
 
-namespace FruitBaskets.Products.Application.DataService
+namespace FruitBaskets.Products.Application
 {
     public interface IDataService
     {

@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FruitBaskets.Baskets", "Fru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FruitBaskets.Products", "FruitBaskets.Products", "{4837924D-2AB5-4E68-BF50-AB0775620B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitBaskets.Products.API", "FruitBaskets.Products\FruitBaskets.Products.API\FruitBaskets.Products.API.csproj", "{01607EF8-A5D6-427D-92DD-08A973DBD3A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitBaskets.Products.API", "FruitBaskets.Products\FruitBaskets.Products.API\FruitBaskets.Products.API.csproj", "{01607EF8-A5D6-427D-92DD-08A973DBD3A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitBaskets.Products.Application", "FruitBaskets.Products\FruitBaskets.Products.Application\FruitBaskets.Products.Application.csproj", "{0F508769-8EFF-4323-8DA3-83FDD6CC0793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitBaskets.Products.Application", "FruitBaskets.Products\FruitBaskets.Products.Application\FruitBaskets.Products.Application.csproj", "{0F508769-8EFF-4323-8DA3-83FDD6CC0793}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitBaskets.Products.Infrastructure", "FruitBaskets.Products\FruitBaskets.Products.Infrastructure\FruitBaskets.Products.Infrastructure.csproj", "{1931309B-3037-4B57-9153-60499741E487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitBaskets.Products.Infrastructure", "FruitBaskets.Products\FruitBaskets.Products.Infrastructure\FruitBaskets.Products.Infrastructure.csproj", "{1931309B-3037-4B57-9153-60499741E487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitBaskets.Products.Domain", "FruitBaskets.Products\FruitBaskets.Products.Domain\FruitBaskets.Products.Domain.csproj", "{C4F55B47-6D47-4503-AB92-9463E8E78D8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitBaskets.Domain", "FruitBaskets.Products\FruitBaskets.Domain\FruitBaskets.Domain.csproj", "{7F931CD9-1E2F-4192-B2C4-7953253472DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{1931309B-3037-4B57-9153-60499741E487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1931309B-3037-4B57-9153-60499741E487}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1931309B-3037-4B57-9153-60499741E487}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4F55B47-6D47-4503-AB92-9463E8E78D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4F55B47-6D47-4503-AB92-9463E8E78D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4F55B47-6D47-4503-AB92-9463E8E78D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4F55B47-6D47-4503-AB92-9463E8E78D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F931CD9-1E2F-4192-B2C4-7953253472DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F931CD9-1E2F-4192-B2C4-7953253472DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F931CD9-1E2F-4192-B2C4-7953253472DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F931CD9-1E2F-4192-B2C4-7953253472DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,7 +47,7 @@ Global
 		{01607EF8-A5D6-427D-92DD-08A973DBD3A6} = {4837924D-2AB5-4E68-BF50-AB0775620B81}
 		{0F508769-8EFF-4323-8DA3-83FDD6CC0793} = {4837924D-2AB5-4E68-BF50-AB0775620B81}
 		{1931309B-3037-4B57-9153-60499741E487} = {4837924D-2AB5-4E68-BF50-AB0775620B81}
-		{C4F55B47-6D47-4503-AB92-9463E8E78D8A} = {4837924D-2AB5-4E68-BF50-AB0775620B81}
+		{7F931CD9-1E2F-4192-B2C4-7953253472DE} = {4837924D-2AB5-4E68-BF50-AB0775620B81}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {409A0906-0790-47B6-938B-015AF92FA22C}

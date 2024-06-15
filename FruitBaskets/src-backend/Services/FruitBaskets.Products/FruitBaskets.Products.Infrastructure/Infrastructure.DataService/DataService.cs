@@ -1,58 +1,60 @@
-﻿using FruitBaskets.Products.Application.DataService;
-using FruitBaskets.Products.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FruitBaskets.Domain;
+using FruitBaskets.Products.Application;
 
-namespace FruitBaskets.Products.Infrastructure.DataService
+namespace FruitBaskets.Products.Infrastructure
 {
     public class DataService : IDataService
     {
-        public Task CreateAsync<T>(T entity) where T : Entity
+        private readonly IDataPersistency persistency;
+
+        public DataService(IDataPersistency _persistency)
         {
-            throw new NotImplementedException();
+            persistency = _persistency;
+        }
+        public async Task CreateAsync<T>(T entity) where T : Entity
+        {
+           await persistency.CreateAsync(entity);
         }
 
-        public Task CreateAsync<T>(IList<T> entities) where T : Entity
+        public async Task CreateAsync<T>(IList<T> entities) where T : Entity
         {
-            throw new NotImplementedException();
+            await persistency.CreateAsync(entities);
         }
 
-        public Task DeleteAllAsync<T>() where T : Entity
+        public async Task DeleteAllAsync<T>() where T : Entity
         {
-            throw new NotImplementedException();
+            await persistency.DeleteAllAsync<T>();
         }
 
-        public Task DeleteAsync<T>(Guid id) where T : Entity
+        public async Task DeleteAsync<T>(Guid id) where T : Entity
         {
-            throw new NotImplementedException();
+            await persistency.DeleteAsync<T>(id);
         }
 
-        public Task<IEnumerable<T>> GetAllAsync<T>() where T : Entity
+        public async Task<IEnumerable<T>> GetAllAsync<T>() where T : Entity
         {
-            throw new NotImplementedException();
+          return  await persistency.GetAllAsync<T>();
         }
 
-        public Task<IEnumerable<T>> GetAsync<T>(Func<T, bool> predicate) where T : Entity
-        {
-            throw new NotImplementedException();
+        public async Task<IEnumerable<T>> GetAsync<T>(Func<T, bool> predicate) where T : Entity
+        {           
+            
+            return await persistency.GetAsync<T>(predicate);
         }
 
-        public Task<T> GetByIdAsync<T>(Guid id) where T : Entity
+        public async Task<T> GetByIdAsync<T>(Guid id) where T : Entity
         {
-            throw new NotImplementedException();
+          return  await persistency.GetByIdAsync<T>(id);
         }
 
-        public Task UpdateAsync<T>(T entity) where T : Entity
+        public async Task UpdateAsync<T>(T entity) where T : Entity
         {
-            throw new NotImplementedException();
+           await persistency.UpdateAsync(entity);
         }
 
-        public Task UpdateAsync<T>(IList<T> entities) where T : Entity
+        public async Task UpdateAsync<T>(IList<T> entities) where T : Entity
         {
-            throw new NotImplementedException();
+            await persistency.UpdateAsync(entities);
         }
     }
 

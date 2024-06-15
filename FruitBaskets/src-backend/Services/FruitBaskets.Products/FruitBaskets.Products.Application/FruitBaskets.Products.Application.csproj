@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FruitBaskets.Products.Domain\FruitBaskets.Products.Domain.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FruitBaskets.Domain\FruitBaskets.Domain.csproj" />
   </ItemGroup>
 
 </Project>

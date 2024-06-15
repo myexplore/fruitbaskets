@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FruitBaskets.Domain\FruitBaskets.Domain.csproj" />
     <ProjectReference Include="..\FruitBaskets.Products.Application\FruitBaskets.Products.Application.csproj" />
-    <ProjectReference Include="..\FruitBaskets.Products.Domain\FruitBaskets.Products.Domain.csproj" />
   </ItemGroup>
 
 </Project>

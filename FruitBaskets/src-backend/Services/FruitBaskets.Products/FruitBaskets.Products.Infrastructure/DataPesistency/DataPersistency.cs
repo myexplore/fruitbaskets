@@ -1,16 +1,17 @@
-﻿using FruitBaskets.Products.Domain;
-using FruitBaskets.Products.Infrastructure.Pesistency;
+﻿using FruitBaskets.Domain;
 using LiteDB;
 using System.Linq.Expressions;
+using System.Reflection;
 
-namespace FruitBaskets.Products.Infrastructure.DataPesistency
+
+namespace FruitBaskets.Products.Infrastructure
 {
-    internal class DataPersistency:IDataPersistency
+    public class DataPersistency:IDataPersistency
     {
         private readonly string dbPath;
         public DataPersistency()
         {
-            dbPath = "C:\\database.db";
+            dbPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "database.db");
          
            
         }
@@ -25,10 +26,7 @@ namespace FruitBaskets.Products.Infrastructure.DataPesistency
                  using (var db = new LiteDatabase(ConnectionString))
                  {
                      var collectionName = typeof(T).Name;
-                     if (!db.CollectionExists(collectionName))
-                     {
-                         throw new Exception($"Collection '{collectionName}' not found");
-                     }
+                    
                      var collections = db.GetCollection<T>(collectionName);
                      collections.Insert(entity);
 
@@ -43,10 +41,7 @@ namespace FruitBaskets.Products.Infrastructure.DataPesistency
                 using (var db = new LiteDatabase(ConnectionString))
                 {
                     var collectionName = typeof(T).Name;
-                    if (!db.CollectionExists(collectionName))
-                    {
-                        throw new Exception($"Collection '{collectionName}' not found");
-                    }
+                    
                     var collections = db.GetCollection<T>(collectionName);
                     collections.InsertBulk(entities);
 
@@ -92,7 +87,7 @@ namespace FruitBaskets.Products.Infrastructure.DataPesistency
 
         public async Task<IEnumerable<T>> GetAllAsync<T>() where T : Entity
         {
-            await Task.Run(() =>
+           return await Task.Run(() =>
             {
                 using (var db = new LiteDatabase(ConnectionString))
                 {
@@ -105,13 +100,12 @@ namespace FruitBaskets.Products.Infrastructure.DataPesistency
                     return collections.FindAll();
 
                 }
-            });
-            return Enumerable.Empty<T>();
+            });           
         }
 
-        public async Task<IEnumerable<T>> GetAsync<T>(Expression<Func<T, bool>> predicate) where T : Entity
+        public async Task<IEnumerable<T>> GetAsync<T>(Func<T, bool> predicate) where T : Entity
         {
-            await Task.Run(() =>
+           return await Task.Run(() =>
             {
                 using (var db = new LiteDatabase(ConnectionString))
                 {
@@ -120,17 +114,18 @@ namespace FruitBaskets.Products.Infrastructure.DataPesistency
                     {
                         throw new Exception($"Collection '{collectionName}' not found");
                     }
+                    Expression<Func<T,bool>> expression = p=>predicate(p);
                     var collections = db.GetCollection<T>(collectionName);
-                    return collections.Find(predicate);
+                    return collections.Find(expression);
 
                 }
             });
-            return Enumerable.Empty<T>();
+           
         }
 
         public async Task<T> GetByIdAsync<T>(Guid id) where T : Entity
         {
-            await Task.Run(() =>
+           return await Task.Run(() =>
             {
                 using (var db = new LiteDatabase(ConnectionString))
                 {
@@ -143,8 +138,7 @@ namespace FruitBaskets.Products.Infrastructure.DataPesistency
                     return collections.FindById(id);
 
                 }
-            });
-            return default(T);
+            });          
         }
 
         public async Task UpdateAsync<T>(T entity) where T : Entity
