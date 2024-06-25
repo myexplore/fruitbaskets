@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FruitBaskets",
+    "\\FruitBaskets\\src-frontend",
+    "\\FruitBaskets\\src-frontend\\basket.ui",
+    "\\FruitBaskets\\src-frontend\\basket.ui\\src"
   ],
-  "SelectedNode": "\\FruitBaskets.sln",
+  "SelectedNode": "\\FruitBaskets\\src-frontend\\basket.ui\\src\\App.tsx",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,18 @@
+.fruitstripe-container{
+   display: flex;
+   min-height: 42px;
+}
+.fruitstripe-container-item_icon{
+  
+    flex: 0 0 20%;
+    background-color: aqua;
+}
+.fruitstripe-container-item_search{    
+    flex: 1 1;
+    background-color: azure;
+}
+.fruitstripe-container-item_signin{
+   
+    flex: 0 0 10%;
+    background-color: blue;
+}
